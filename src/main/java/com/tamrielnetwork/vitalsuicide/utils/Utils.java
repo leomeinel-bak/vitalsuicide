@@ -16,9 +16,9 @@
  * along with this program. If not, see https://github.com/TamrielNetwork/VitalSuicide/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalfly.utils;
+package com.tamrielnetwork.vitalsuicide.utils;
 
-import com.tamrielnetwork.vitalfly.VitalFly;
+import com.tamrielnetwork.vitalsuicide.VitalSuicide;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -30,34 +30,10 @@ import java.util.Objects;
 
 public class Utils {
 
-	private static final VitalFly main = JavaPlugin.getPlugin(VitalFly.class);
-
-	public static void sendMessage(CommandSender player, Map<String, String> placeholders, String message) {
-		List<String> messages = getMessages(message);
-		for (String string : messages) {
-			for (Map.Entry<String, String> entry : placeholders.entrySet()) {
-				if (string.contains(entry.getKey())) {
-					string = string.replace(entry.getKey(), entry.getValue());
-				}
-			}
-
-			player.sendMessage(replaceColors(string));
-		}
-	}
+	private static final VitalSuicide main = JavaPlugin.getPlugin(VitalSuicide.class);
 
 	public static void sendMessage(CommandSender player, String message) {
 		player.sendMessage(replaceColors(Objects.requireNonNull(main.getMessages().getMessagesConf().getString(message))));
-	}
-
-	private static List<String> getMessages(String message) {
-		List<String> messages;
-		if (main.getMessages().getMessagesConf().isList(message)) {
-			messages = Objects.requireNonNull(main.getMessages().getMessagesConf().getStringList(message));
-		} else {
-			messages = new ArrayList<>();
-			messages.add(main.getMessages().getMessagesConf().getString(message));
-		}
-		return messages;
 	}
 
 	public static String replaceColors(String string) {
