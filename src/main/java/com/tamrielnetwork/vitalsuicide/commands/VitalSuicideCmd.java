@@ -18,41 +18,40 @@
 
 package com.tamrielnetwork.vitalsuicide.commands;
 
-import com.tamrielnetwork.vitalsuicide.utils.Utils;
+import com.tamrielnetwork.vitalsuicide.utils.Chat;
+import com.tamrielnetwork.vitalsuicide.utils.Cmd;
+import net.kyori.adventure.text.Component;
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
 import org.jetbrains.annotations.NotNull;
 
 public class VitalSuicideCmd implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-		// Check args length
-		if (args.length != 0) {
-			Utils.sendMessage(sender, "invalid-option");
+
+		if (Cmd.checkArgsNotEqualTo(sender, args, 0)) {
 			return true;
 		}
-		// Toggle Trash Interface
-		commitSuicide(sender);
+		doSuicide(sender);
 		return true;
 
 	}
 
-	private void commitSuicide(CommandSender sender) {
-		// Check if command sender is a player
-		if (!(sender instanceof Player)) {
-			Utils.sendMessage(sender, "player-only");
+	private void doSuicide(@NotNull CommandSender sender) {
+		Player senderPlayer = (Player) sender;
+
+		if (Cmd.checkSender(sender) || Cmd.checkPerm(sender, "vitalsuicide.suicide")) {
 			return;
 		}
-		// Check perms
-		if (!sender.hasPermission("vitalsuicide.suicide")) {
-			Utils.sendMessage(sender, "no-perms");
-			return;
-		}
-		Utils.sendMessage(sender, "suicide");
-		((Player) sender).setHealth(0);
+
+		Chat.sendMessage(sender, "suicide");
+		senderPlayer.setHealth(0);
 
 	}
+
 }
