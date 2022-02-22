@@ -19,14 +19,11 @@
 package com.tamrielnetwork.vitalsuicide.commands;
 
 import com.tamrielnetwork.vitalsuicide.utils.Chat;
-import com.tamrielnetwork.vitalsuicide.utils.Cmd;
-import net.kyori.adventure.text.Component;
-import org.bukkit.Bukkit;
+import com.tamrielnetwork.vitalsuicide.utils.commands.Cmd;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.Inventory;
 import org.jetbrains.annotations.NotNull;
 
 public class VitalSuicideCmd implements CommandExecutor {
@@ -34,7 +31,7 @@ public class VitalSuicideCmd implements CommandExecutor {
 	@Override
 	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
 
-		if (Cmd.checkArgsNotEqualTo(sender, args, 0)) {
+		if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
 			return true;
 		}
 		doSuicide(sender);
@@ -45,7 +42,7 @@ public class VitalSuicideCmd implements CommandExecutor {
 	private void doSuicide(@NotNull CommandSender sender) {
 		Player senderPlayer = (Player) sender;
 
-		if (Cmd.checkSender(sender) || Cmd.checkPerm(sender, "vitalsuicide.suicide")) {
+		if (Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, "vitalsuicide.suicide")) {
 			return;
 		}
 

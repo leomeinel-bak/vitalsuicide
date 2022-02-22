@@ -1,5 +1,5 @@
 /*
- * VitalTrash is a Spigot Plugin that gives players the ability to open a trash interface.
+ * VitalSuicide is a Spigot Plugin that gives players the ability to commit suicide.
  * Copyright © 2022 Leopold Meinel
  *
  * This program is free software: you can redistribute it and/or modify
@@ -13,17 +13,18 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program. If not, see https://github.com/TamrielNetwork/VitalTrash/blob/main/LICENSE
+ * along with this program. If not, see https://github.com/TamrielNetwork/VitalSuicide/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalsuicide.utils;
+package com.tamrielnetwork.vitalsuicide.utils.commands;
 
+import com.tamrielnetwork.vitalsuicide.utils.Chat;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 public class Cmd {
-	public static boolean checkArgsNotEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
+	public static boolean isArgsLengthNotEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
 		if (args.length != length) {
 			Chat.sendMessage(sender, "cmd");
 			return true;
@@ -31,7 +32,7 @@ public class Cmd {
 		return false;
 	}
 
-	public static boolean checkPerm(@NotNull CommandSender sender, @NotNull String perm) {
+	public static boolean isNotPermitted(@NotNull CommandSender sender, @NotNull String perm) {
 		if (!sender.hasPermission(perm)) {
 			Chat.sendMessage(sender, "no-perms");
 			return true;
@@ -39,7 +40,7 @@ public class Cmd {
 		return false;
 	}
 
-	public static boolean checkSender(@NotNull CommandSender sender) {
+	public static boolean isInvalidSender(@NotNull CommandSender sender) {
 		if (!(sender instanceof Player)) {
 			Chat.sendMessage(sender, "player-only");
 			return true;
