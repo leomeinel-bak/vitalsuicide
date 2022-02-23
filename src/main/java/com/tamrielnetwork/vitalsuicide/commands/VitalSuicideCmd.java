@@ -40,11 +40,11 @@ public class VitalSuicideCmd implements CommandExecutor {
 	}
 
 	private void doSuicide(@NotNull CommandSender sender) {
-		Player senderPlayer = (Player) sender;
 
 		if (Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, "vitalsuicide.suicide")) {
 			return;
 		}
+		Player senderPlayer = (Player) sender;
 
 		Chat.sendMessage(sender, "suicide");
 		senderPlayer.setHealth(0);

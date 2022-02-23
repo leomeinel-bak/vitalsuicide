@@ -52,6 +52,7 @@ public final class VitalSuicide extends JavaPlugin {
 	}
 
 	public Messages getMessages() {
+
 		return messages;
 	}
 
