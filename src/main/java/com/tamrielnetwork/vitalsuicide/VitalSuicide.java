@@ -32,9 +32,7 @@ public final class VitalSuicide extends JavaPlugin {
 	@Override
 	public void onEnable() {
 
-		Objects.requireNonNull(getCommand("vitalsuicide")).setExecutor(new VitalSuicideCmd());
-
-		saveDefaultConfig();
+		Objects.requireNonNull(getCommand("suicide")).setExecutor(new VitalSuicideCmd());
 
 		messages = new Messages();
 

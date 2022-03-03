@@ -85,7 +85,7 @@ To get the plugin running on your server follow these simple steps.
 
 1. Permission: `vitalsuicide.suicide`
 
-* Command: `/vitalsuicide`
+* Command: `/suicide`
 * Description: Kill yourself
 
 ### Configuration - config.yml

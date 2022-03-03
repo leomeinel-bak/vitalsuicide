@@ -6,9 +6,9 @@ authors: [ Tamriel Network ]
 website: https://tamriel.site
 description: Gives you the ability to commit suicide.
 commands:
-  vitalsuicide:
+  suicide:
     description: "Main command"
-    usage: "/vitalsuicide"
+    usage: "/suicide"
 permissions:
   vitalsuicide.suicide:
     description: "Permission to commit suicide"
