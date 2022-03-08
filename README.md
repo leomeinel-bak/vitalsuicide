@@ -17,7 +17,7 @@
 <h3 align="center">VitalSuicide</h3>
 
   <p align="center">
-    Kill yourself on Spigot and Paper
+    Commit suicide on Spigot and Paper
     <br />
     <a href="https://github.com/TamrielNetwork/VitalSuicide"><strong>Explore the docs »</strong></a>
     <br />
@@ -45,7 +45,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#commands-and-permissions">Commands and Permissions</a></li>
-        <li><a href="#configuration">Configuration</a></li>
+        <li><a href="#configuration - messages.yml">Configuration</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -68,7 +68,7 @@ This plugin is perfect for any server wanting their players to be able to commit
 
 ### Features
 
-* Kill yourself
+* Commit Suicide
 
 ### Built With
 
@@ -86,16 +86,15 @@ To get the plugin running on your server follow these simple steps.
 1. Permission: `vitalsuicide.suicide`
 
 * Command: `/suicide`
-* Description: Kill yourself
-
-### Configuration - config.yml
-
-```
-```
+* Description: Commit suicide
 
 ### Configuration - messages.yml
 
 ```
+cmd: "&fUsage: &b/suicide"
+suicide: "&fYou committed suicide"
+no-perms: "&cYou don't have enough permissions!"
+player-only: "&cThis command can only be executed by players!"
 ```
 
 <!-- ROADMAP -->
