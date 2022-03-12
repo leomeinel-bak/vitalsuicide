@@ -31,18 +31,16 @@ public class Chat {
 	private static final VitalSuicide main = JavaPlugin.getPlugin(VitalSuicide.class);
 
 	private Chat() {
-
 		throw new IllegalStateException("Utility class");
 	}
 
 	public static void sendMessage(@NotNull CommandSender player, @NotNull String message) {
-
-		player.sendMessage(replaceColors(Objects.requireNonNull(main.getMessages().getMessagesConf().getString(message))));
+		player.sendMessage(replaceColors(Objects.requireNonNull(main.getMessages()
+		                                                            .getMessagesConf()
+		                                                            .getString(message))));
 	}
 
 	public static String replaceColors(@NotNull String string) {
-
 		return ChatColor.translateAlternateColorCodes('&', string);
 	}
-
 }
