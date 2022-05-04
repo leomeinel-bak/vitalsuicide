@@ -2,8 +2,7 @@ name: VitalSuicide
 version: @version@
 main: com.tamrielnetwork.vitalsuicide.VitalSuicide
 api-version: 1.17
-authors: [ Tamriel Network ]
-website: https://tamriel.site
+authors: [ Leopold Meinel ]
 description: Gives you the ability to commit suicide.
 commands:
   suicide:
