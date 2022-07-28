@@ -16,34 +16,31 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalSuicide/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalsuicide.files;
+package dev.meinel.leo.vitalsuicide.utils;
 
-import com.tamrielnetwork.vitalsuicide.VitalSuicide;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
+import dev.meinel.leo.vitalsuicide.VitalSuicide;
+import org.bukkit.ChatColor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 
-import java.io.File;
+import java.util.Objects;
 
-public class Messages {
+public class Chat {
 
-	private final VitalSuicide main = JavaPlugin.getPlugin(VitalSuicide.class);
-	private final File messagesFile;
-	private final FileConfiguration messagesConf;
+	private static final VitalSuicide main = JavaPlugin.getPlugin(VitalSuicide.class);
 
-	public Messages() {
-		messagesFile = new File(main.getDataFolder(), "messages.yml");
-		saveMessagesFile();
-		messagesConf = YamlConfiguration.loadConfiguration(messagesFile);
+	private Chat() {
+		throw new IllegalStateException("Utility class");
 	}
 
-	private void saveMessagesFile() {
-		if (!messagesFile.exists()) {
-			main.saveResource("messages.yml", false);
-		}
+	public static void sendMessage(@NotNull CommandSender player, @NotNull String message) {
+		player.sendMessage(replaceColors(Objects.requireNonNull(main.getMessages()
+		                                                            .getMessagesConf()
+		                                                            .getString(message))));
 	}
 
-	public FileConfiguration getMessagesConf() {
-		return messagesConf;
+	public static String replaceColors(@NotNull String string) {
+		return ChatColor.translateAlternateColorCodes('&', string);
 	}
 }

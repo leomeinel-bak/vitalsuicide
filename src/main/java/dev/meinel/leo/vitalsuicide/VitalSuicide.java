@@ -16,10 +16,10 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalSuicide/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalsuicide;
+package dev.meinel.leo.vitalsuicide;
 
-import com.tamrielnetwork.vitalsuicide.commands.VitalSuicideCmd;
-import com.tamrielnetwork.vitalsuicide.files.Messages;
+import dev.meinel.leo.vitalsuicide.commands.VitalSuicideCmd;
+import dev.meinel.leo.vitalsuicide.files.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

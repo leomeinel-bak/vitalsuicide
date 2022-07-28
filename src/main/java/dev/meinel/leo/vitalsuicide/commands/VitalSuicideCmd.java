@@ -16,40 +16,35 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalSuicide/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalsuicide.utils.commands;
+package dev.meinel.leo.vitalsuicide.commands;
 
-import com.tamrielnetwork.vitalsuicide.utils.Chat;
+import dev.meinel.leo.vitalsuicide.utils.Chat;
+import dev.meinel.leo.vitalsuicide.utils.commands.Cmd;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class Cmd {
+public class VitalSuicideCmd
+		implements CommandExecutor {
 
-	private Cmd() {
-		throw new IllegalStateException("Utility class");
+	@Override
+	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label,
+	                         @NotNull String[] args) {
+		if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
+			return false;
+		}
+		doSuicide(sender);
+		return true;
 	}
 
-	public static boolean isArgsLengthNotEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
-		if (args.length != length) {
-			Chat.sendMessage(sender, "cmd");
-			return true;
+	private void doSuicide(@NotNull CommandSender sender) {
+		if (Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, "vitalsuicide.suicide")) {
+			return;
 		}
-		return false;
-	}
-
-	public static boolean isNotPermitted(@NotNull CommandSender sender, @NotNull String perm) {
-		if (!sender.hasPermission(perm)) {
-			Chat.sendMessage(sender, "no-perms");
-			return true;
-		}
-		return false;
-	}
-
-	public static boolean isInvalidSender(@NotNull CommandSender sender) {
-		if (!(sender instanceof Player)) {
-			Chat.sendMessage(sender, "player-only");
-			return true;
-		}
-		return false;
+		Player senderPlayer = (Player) sender;
+		Chat.sendMessage(sender, "suicide");
+		senderPlayer.setHealth(0);
 	}
 }
