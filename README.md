@@ -10,7 +10,7 @@
 <!--suppress ALL -->
 <br />
 <p align="center">
-  <a href="https://github.com/TamrielNetwork/VitalSuicide">
+  <a href="https://github.com/LeoMeinel/VitalSuicide">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -19,14 +19,14 @@
   <p align="center">
     Commit suicide on Spigot and Paper
     <br />
-    <a href="https://github.com/TamrielNetwork/VitalSuicide"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LeoMeinel/VitalSuicide"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/TamrielNetwork/VitalSuicide">View Demo</a>
+    <a href="https://github.com/LeoMeinel/VitalSuicide">View Demo</a>
     ·
-    <a href="https://github.com/TamrielNetwork/VitalSuicide/issues">Report Bug</a>
+    <a href="https://github.com/LeoMeinel/VitalSuicide/issues">Report Bug</a>
     ·
-    <a href="https://github.com/TamrielNetwork/VitalSuicide/issues">Request Feature</a>
+    <a href="https://github.com/LeoMeinel/VitalSuicide/issues">Request Feature</a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -101,7 +101,7 @@ player-only: "&cThis command can only be executed by players!"
 
 ## Roadmap
 
-See the [open issues](https://github.com/TamrielNetwork/VitalSuicide/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/LeoMeinel/VitalSuicide/issues) for a list of proposed features (and known
 issues).
 
 <!-- CONTRIBUTING -->
@@ -131,7 +131,7 @@ Leopold Meinel - [@TamrielN](https://twitter.com/TamrielN) - Twitter
 
 Leopold Meinel - [contact@tamriel.me](mailto:contact@tamriel.me) - eMail
 
-Project Link - [VitalSuicide](https://github.com/TamrielNetwork/VitalSuicide) - GitHub
+Project Link - [VitalSuicide](https://github.com/LeoMeinel/VitalSuicide) - GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -141,26 +141,26 @@ Project Link - [VitalSuicide](https://github.com/TamrielNetwork/VitalSuicide) - 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors-anon/TamrielNetwork/VitalSuicide?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalSuicide?style=for-the-badge
 
-[contributors-url]: https://github.com/TamrielNetwork/VitalSuicide/graphs/contributors
+[contributors-url]: https://github.com/LeoMeinel/VitalSuicide/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/TamrielNetwork/VitalSuicide?label=Forks&style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalSuicide?label=Forks&style=for-the-badge
 
-[forks-url]: https://github.com/TamrielNetwork/VitalSuicide/network/members
+[forks-url]: https://github.com/LeoMeinel/VitalSuicide/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/TamrielNetwork/VitalSuicide?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalSuicide?style=for-the-badge
 
-[stars-url]: https://github.com/TamrielNetwork/VitalSuicide/stargazers
+[stars-url]: https://github.com/LeoMeinel/VitalSuicide/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/TamrielNetwork/VitalSuicide?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalSuicide?style=for-the-badge
 
-[issues-url]: https://github.com/TamrielNetwork/VitalSuicide/issues
+[issues-url]: https://github.com/LeoMeinel/VitalSuicide/issues
 
-[license-shield]: https://img.shields.io/github/license/TamrielNetwork/VitalSuicide?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalSuicide?style=for-the-badge
 
-[license-url]: https://github.com/TamrielNetwork/VitalSuicide/blob/main/LICENSE
+[license-url]: https://github.com/LeoMeinel/VitalSuicide/blob/main/LICENSE
 
-[quality-shield]: https://img.shields.io/codefactor/grade/github/TamrielNetwork/VitalSuicide?style=for-the-badge
+[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalSuicide?style=for-the-badge
 
-[quality-url]: https://www.codefactor.io/repository/github/TamrielNetwork/VitalSuicide
+[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalSuicide
