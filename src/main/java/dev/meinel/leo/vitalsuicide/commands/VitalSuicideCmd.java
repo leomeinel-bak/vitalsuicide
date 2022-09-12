@@ -20,26 +20,26 @@ import org.jetbrains.annotations.NotNull;
 
 public class VitalSuicideCmd implements CommandExecutor {
 
-  @Override
-  public boolean onCommand(
-      @NotNull CommandSender sender,
-      @NotNull Command command,
-      @NotNull String label,
-      @NotNull String[] args) {
-    if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
-      return false;
+    @Override
+    public boolean onCommand(
+            @NotNull CommandSender sender,
+            @NotNull Command command,
+            @NotNull String label,
+            @NotNull String[] args) {
+        if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
+            return false;
+        }
+        doSuicide(sender);
+        return true;
     }
-    doSuicide(sender);
-    return true;
-  }
 
-  private void doSuicide(@NotNull CommandSender sender) {
-    if (Cmd.isInvalidSender(sender) ||
-        Cmd.isNotPermitted(sender, "vitalsuicide.suicide")) {
-      return;
+    private void doSuicide(@NotNull CommandSender sender) {
+        if (Cmd.isInvalidSender(sender) ||
+                Cmd.isNotPermitted(sender, "vitalsuicide.suicide")) {
+            return;
+        }
+        Player senderPlayer = (Player) sender;
+        Chat.sendMessage(sender, "suicide");
+        senderPlayer.setHealth(0);
     }
-    Player senderPlayer = (Player) sender;
-    Chat.sendMessage(sender, "suicide");
-    senderPlayer.setHealth(0);
-  }
 }
