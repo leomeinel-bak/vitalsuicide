@@ -11,7 +11,7 @@
 <!--suppress ALL -->
 <br />
 <p align="center">
-  <a href="https://github.com/LeoMeinel/VitalSuicide">
+  <a href="https://github.com/LeoMeinel/vitalsuicide">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -20,14 +20,14 @@
   <p align="center">
     Commit suicide on Spigot and Paper
     <br />
-    <a href="https://github.com/LeoMeinel/VitalSuicide"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LeoMeinel/vitalsuicide"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LeoMeinel/VitalSuicide">View Demo</a>
+    <a href="https://github.com/LeoMeinel/vitalsuicide">View Demo</a>
     ·
-    <a href="https://github.com/LeoMeinel/VitalSuicide/issues">Report Bug</a>
+    <a href="https://github.com/LeoMeinel/vitalsuicide/issues">Report Bug</a>
     ·
-    <a href="https://github.com/LeoMeinel/VitalSuicide/issues">Request Feature</a>
+    <a href="https://github.com/LeoMeinel/vitalsuicide/issues">Request Feature</a>
   </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -75,7 +75,7 @@ player-only: "&cThis command can only be executed by players!"
 
 ## Roadmap
 
-See the [open issues](https://github.com/LeoMeinel/VitalSuicide/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/LeoMeinel/vitalsuicide/issues) for a list of proposed features (and known
 issues).
 
 <!-- CONTRIBUTING -->
@@ -103,7 +103,7 @@ Distributed under the GNU General Public License v3.0. See `LICENSE` for more in
 
 Leopold Meinel - [leo@meinel.dev](mailto:leo@meinel.dev) - eMail
 
-Project Link - [VitalSuicide](https://github.com/LeoMeinel/VitalSuicide) - GitHub
+Project Link - [VitalSuicide](https://github.com/LeoMeinel/vitalsuicide) - GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -113,15 +113,15 @@ Project Link - [VitalSuicide](https://github.com/LeoMeinel/VitalSuicide) - GitHu
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalSuicide?style=for-the-badge
-[contributors-url]: https://github.com/LeoMeinel/VitalSuicide/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalSuicide?label=Forks&style=for-the-badge
-[forks-url]: https://github.com/LeoMeinel/VitalSuicide/network/members
-[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalSuicide?style=for-the-badge
-[stars-url]: https://github.com/LeoMeinel/VitalSuicide/stargazers
-[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalSuicide?style=for-the-badge
-[issues-url]: https://github.com/LeoMeinel/VitalSuicide/issues
-[license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalSuicide?style=for-the-badge
-[license-url]: https://github.com/LeoMeinel/VitalSuicide/blob/main/LICENSE
-[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalSuicide?style=for-the-badge
-[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalSuicide
+[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/vitalsuicide?style=for-the-badge
+[contributors-url]: https://github.com/LeoMeinel/vitalsuicide/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/vitalsuicide?label=Forks&style=for-the-badge
+[forks-url]: https://github.com/LeoMeinel/vitalsuicide/network/members
+[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/vitalsuicide?style=for-the-badge
+[stars-url]: https://github.com/LeoMeinel/vitalsuicide/stargazers
+[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/vitalsuicide?style=for-the-badge
+[issues-url]: https://github.com/LeoMeinel/vitalsuicide/issues
+[license-shield]: https://img.shields.io/github/license/LeoMeinel/vitalsuicide?style=for-the-badge
+[license-url]: https://github.com/LeoMeinel/vitalsuicide/blob/main/LICENSE
+[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/vitalsuicide?style=for-the-badge
+[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/vitalsuicide

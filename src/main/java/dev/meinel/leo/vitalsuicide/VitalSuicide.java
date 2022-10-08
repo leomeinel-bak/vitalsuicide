@@ -38,7 +38,7 @@ public final class VitalSuicide extends JavaPlugin {
         Bukkit
                 .getLogger()
                 .info(
-                        "See https://github.com/LeoMeinel/VitalSuicide/blob/main/LICENSE for more details.");
+                        "See https://www.gnu.org/licenses/gpl-3.0-standalone.html for more details.");
     }
 
     @Override
