@@ -23,7 +23,7 @@ public class VitalSuicideCmd implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command,
             @NotNull String label, @NotNull String[] args) {
-        if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
+        if (!Cmd.isArgsLengthEqualTo(sender, args, 0)) {
             return false;
         }
         doSuicide(sender);
@@ -31,7 +31,7 @@ public class VitalSuicideCmd implements CommandExecutor {
     }
 
     private void doSuicide(@NotNull CommandSender sender) {
-        if (Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, "vitalsuicide.suicide")) {
+        if (Cmd.isInvalidSender(sender) || !Cmd.isPermitted(sender, "vitalsuicide.suicide")) {
             return;
         }
         Player senderPlayer = (Player) sender;
